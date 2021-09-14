@@ -1,0 +1,77 @@
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --button-secondary-color: #f5f4fa;
+}
+.list {
+  list-style: none;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primery-text-color);
+}
+/* цвет основного текста #212121 */
+/* вторичній цвет #757575 */
+/* белый  #FFFFFF */
+/* акцент #2196F3 */
+/* вторичный цвет фона #E5E5E5 */
+.logo {
+  color: var(--accent-color);
+}
+/* site nav */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* contact nav */
+.contact-nav .link {
+  color: var(--primery-text-color);
+}
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+  color: var(--accent-color);
+}
+/* hero */
+.hero-title {
+  color: var(--title-text-color);
+}
+
+/* section title */
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* skrol list */
+.skroll-list .title {
+  color: var(--title-text-color);
+}
+/* command list */
+.command-list .title {
+  color: var(--title-text-color);
+}
+/* стили для портфолио html */
+/* portfolio list */
+.portfolio-list .title {
+  color: var(--title-text-color);
+}
+.button {
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+}
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.button.secondary {
+  color: var(--title-text-color);
+  background-color: var(--button-secondary-color);
+}
