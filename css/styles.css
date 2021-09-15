@@ -1,3 +1,8 @@
+/* цвет основного текста #212121 */
+/* вторичній цвет #757575 */
+/* белый  #FFFFFF */
+/* акцент #2196F3 */
+/* вторичный цвет фона #E5E5E5 */
 :root {
   --primery-text-color: #757575;
   --title-text-color: #212121;
@@ -8,20 +13,43 @@
 .list {
   list-style: none;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 
 body {
   background-color: var(--primary-bg-color);
   color: var(--primery-text-color);
 }
-/* цвет основного текста #212121 */
-/* вторичній цвет #757575 */
-/* белый  #FFFFFF */
-/* акцент #2196F3 */
-/* вторичный цвет фона #E5E5E5 */
+/*-------------HEADER--------- */
+header {
+  background: #ffffff;
+}
 .logo {
   color: var(--accent-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 /* site nav */
+.site-nav {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
 .site-nav .link {
   color: var(--title-text-color);
 }
@@ -33,6 +61,14 @@ body {
   color: var(--accent-color);
 }
 /* contact nav */
+.contact-nav {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
 .contact-nav .link {
   color: var(--primery-text-color);
 }
@@ -40,38 +76,119 @@ body {
 .contact-nav .link:focus {
   color: var(--accent-color);
 }
-/* hero */
-.hero-title {
-  color: var(--title-text-color);
-}
 
+/*------------ HERO----------- */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/* button */
+.button {
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.button.primary:hover {
+  background-color: var(--button-secondary-color);
+  color: var(--accent-color);
+}
+/* ---------------SKROLL SECTIONS----------- */
+
+/* skrol list */
+.skroll-list-title {
+  color: var(--title-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.skroll-list-paragraph {
+  color: var(--primery-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+/* -------ЧЕМ МЫ ЗАНИМАЕМСЯ-------- */
 /* section title */
 .section-title {
   color: var(--title-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-
-/* skrol list */
-.skroll-list .title {
+/* ---------COMMAND SECTION---------- */
+.command-title {
   color: var(--title-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-/* command list */
-.command-list .title {
+.command-list-title {
   color: var(--title-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+.command-list-paragraph {
+  color: var(--primery-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 /* стили для портфолио html */
 /* portfolio list */
 .portfolio-list .title {
   color: var(--title-text-color);
 }
-.button {
-  color: var(--title-text-color);
-  background-color: var(--primary-white-color);
-}
-.button.primary {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-}
+
 .button.secondary {
   color: var(--title-text-color);
   background-color: var(--button-secondary-color);
+}
+/* portfolio button */
+.portfolio-button .button.secondary:hover {
+  background-color: var(--accent-color);
+  color: var(--button-secondary-color);
 }
