@@ -206,13 +206,12 @@ header {
   color: #ffffff;
 }
 .footer-contact {
-  color: var(--primary-white-color);
   font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 .footer-contact .address {
   color: var(--primary-white-color);
@@ -335,13 +334,12 @@ header {
   letter-spacing: 0.03em;
 }
 .portfolio-footer-contact {
-  color: var(--primary-white-color);
   font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 .portfolio-footer-contact .address {
   color: var(--primary-white-color);
